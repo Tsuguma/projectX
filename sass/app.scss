@@ -1,14 +1,4 @@
-header {
-	width: 100%;
-	background-color: red;
-}
-
-main {
-	height: 500px;
-	background-color: black;
-}
-
-footer {
-	width: 100%;
-	background-color: blue;
-}
+@import "foundation/_reset.scss";
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+@import "layout/_main.scss";
