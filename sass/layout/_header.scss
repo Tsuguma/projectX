@@ -13,16 +13,23 @@
 //     position: absolute;
 //   }
 // }
+header{
+	position: relative;
+	.img{
+		position: absolute;
+		z-index: 10;
+	}
+}
 
 .m-nav{
-	display: flex;
-  justify-content: space-between;
   ul{
   	display: flex;
-  	margin: 50px 0;
+  	justify-content: flex-end;
+  	margin-bottom: 50px;
   	li{
+  		padding-top: 40px;
   		margin-left: 15px;
   		font: 14px bold; 
-  	}
+    }
   }
 }
