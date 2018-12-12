@@ -1,0 +1,29 @@
+main {
+	width: 1152px;
+
+}
+
+.vmain {
+	text-align: center;
+}
+
+.words {
+	font-size:14px; 
+}
+
+.vmain {
+	position: relative;
+
+	.imgtext {
+		position: absolute;
+		right: 2px;
+		bottom: -46px;
+	}
+}
+
+
+.ctitle {
+	padding: 70px 70px;
+	font-size: 30px;
+	text-align: center;
+}
