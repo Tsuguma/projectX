@@ -1,0 +1,28 @@
+// nav{
+// 	position: relative;
+// 	display: flex;
+// 	justify-content: space-between;
+//   .header {
+// 	  display: flex;
+//     li{
+//   	  font: 14px bold;
+//    	  margin :50px 10px;
+//     }  
+// }
+//   .img{
+//     position: absolute;
+//   }
+// }
+
+.m-nav{
+	display: flex;
+  justify-content: space-between;
+  ul{
+  	display: flex;
+  	margin: 50px 0;
+  	li{
+  		margin-left: 15px;
+  		font: 14px bold; 
+  	}
+  }
+}
