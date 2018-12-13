@@ -1,5 +1,5 @@
 body {
-	width: 1152px;
+	max-width: 1152px;
 	margin: 0 auto;
 }
 
@@ -98,3 +98,20 @@ body {
 .read:hover::after {
 	width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+	header {
+		width: 100%;
+		position: initial;
+		text-align: center;
+		.img {
+			position: initial;
+			z-index: initial;
+		}
+		.m-nav {
+			display: none;
+		}
+	}
+
+	
+  }
