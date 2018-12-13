@@ -27,6 +27,9 @@ body {
 		bottom: -46px;
 	}
 }
+.sp-img{
+	display: none;
+}
 
 
 .ctitle {
@@ -55,7 +58,7 @@ body {
 	}
 }
 
-.post1 {
+.unreade{
 	position: relative;
 	.read {
 		position: absolute;
@@ -107,12 +110,39 @@ body {
 		.img {
 			position: initial;
 			z-index: initial;
+			padding: 20px 0px;
 		}
 		.m-nav {
 			display: none;
 		}
 	}
 
+	.pc-img{
+		display: none;
+	}
+	.sp-img{
+		display: initial;
+	}
+	.vmain {
+	position: relative;
+    }
+	.imgtext {
+		position: absolute;
+		left: 20px;
+		top: 30px;
+	}
+	main {
+		.content {
+			.post {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.post-size {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
 	footer {
 		width: 100%;
 		.copy {
