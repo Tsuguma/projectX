@@ -1,13 +1,20 @@
-main {
+body {
 	width: 1152px;
-
+	margin: 0 auto;
 }
+
+// main {
+// 	width: 1152px;
+// 	margin: 0 auto;
+// }
+
 
 .vmain {
 	text-align: center;
 }
 
 .words {
+	margin-top: 10px;
 	font-size:14px; 
 }
 
@@ -42,14 +49,13 @@ main {
 .post-size {
 	width: 320px;
 	height: 400px;
-	transition: 0.8s;
+	transition: 0.5s;
 	&:hover {
 		box-shadow: 0 0 8px gray;
 	}
 }
 
 .post1 {
-	border: 1px solid;
 	position: relative;
 	.read {
 		position: absolute;
@@ -64,4 +70,31 @@ main {
 
 .come {
 	@extend .date;
+}
+
+
+.under {
+	text-decoration: none;
+	color: #000;
+}
+
+.read {
+	position: relative;
+
+}
+
+.read::after {
+	display: block;
+	content: "";
+	width: 15%;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	right: 0;
+	bottom: -13px;
+	transition: .5s;
+}
+
+.read:hover::after {
+	width: 100%;
 }
