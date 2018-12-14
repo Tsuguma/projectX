@@ -16,13 +16,19 @@
 			<h2 class="ctitle">Latest Articles</h2>
 
 			<div class="post">
+				<?php if (have_posts()); ?>
+				  <?php while (have_posts()): the_post(); ?>
 				<div class="post1 post-size unreade">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="">
-
-					<p class="date">2018 / 5 / 20</p>
-					<p class="come">おしゃれカフェがありますよ</p>
+          <?php get_the_post_thumbnail(); ?> 
+					<p class="date"><?php the_date("Y / n / j"); ?>
+</p>
+					<p class="come"><?php the_title(); ?>
+</p>
 					<p class="read"><a href="" class="under">READ MORE</a></p>
 				</div>
+				   <?php endwhile; ?>
+				<?php endif; ?>
+
 				<div class="post2 post-size unreade">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_2.png" alt="">
 					<p class="date">2018 / 5 / 19</p>
