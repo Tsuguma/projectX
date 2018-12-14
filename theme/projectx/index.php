@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="css/app.css">
-	<title>Document</title>
-</head>
-<body>
-	<header>
-		<div class="img">
-		  <img src="img/logo.png" alt="logo">
-		</div>
-		<nav class="m-nav">
-			<ul class="header">
-				<li>Menu01</li>
-				<li>Menu02</li>
-				<li>Menu03</li>
-				<li>Menu04</li>
-			</ul>
-		</nav>
-	</header>
-	
+<?php get_header() ?>
+
 
 	<main>
 		<div class="vmain">
-			<img src="img/visual_1_pc.png" alt="" class="pc-img">
-			<img src="img/visual_text_pc.png" alt="" class="imgtext pc-img">
-			<img src="img/visual_1_sp.png" alt="" class="sp-img">
-			<img src="img/visual_text_sp.png" alt=""
+			<img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="" class="pc-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt="" class="imgtext pc-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_sp.png" alt="" class="sp-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt=""
 			class="imgtext sp-img">
 		</div>
 
@@ -38,20 +17,20 @@
 
 			<div class="post">
 				<div class="post1 post-size unreade">
-					<img src="img/post_img_1.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="">
 
 					<p class="date">2018 / 5 / 20</p>
 					<p class="come">おしゃれカフェがありますよ</p>
 					<p class="read"><a href="" class="under">READ MORE</a></p>
 				</div>
 				<div class="post2 post-size unreade">
-					<img src="img/post_img_2.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_2.png" alt="">
 					<p class="date">2018 / 5 / 19</p>
 					<p class="come">あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
 					<p class="read"><a href="" class="under"></a>READ MORE</p>
 				</div>
 				<div class="post3 post-size unreade">
-					<img src="img/post_img_3.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_3.png" alt="">
 					<p class="date">2018 / 5 / 18</p>
 					<p class="come">ラソナの社内はこんなのよ</p>
 					<p class="read"><a href="" class="under"></a>READ MORE</p>
@@ -59,19 +38,19 @@
 			</div>
 			<div class="post">
 				<div class="post4 post-size unreade">
-					<img src="img/post_img_4.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_4.png" alt="">
 					<p class="date">2018 / 5 / 20</p>
 					<p class="come">おしゃれカフェがありますよ</p>
 					<p class="read"><a href="" class="under"></a>READ MORE</p>
 				</div>
 				<div class="post5 post-size unreade">
-					<img src="img/post_img_5.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_5.png" alt="">
 					<p class="date">2018 / 5 / 19</p>
 					<p class="come">あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
 					<p class="read"><a href="" class="under"></a>READ MORE</p>
 				</div>
 				<div class="post6 post-size unreade">
-					<img src="img/post_img_6.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/post_img_6.png" alt="">
 					<p class="date">2018 / 5 / 18</p>
 					<p class="come">ラソナの社内はこんなのよ</p>
 					<p class="read"><a href="" class="under"></a>READ MORE</p>
@@ -84,13 +63,4 @@
 
 	</main>
 
-	<footer>
-		<div class="copy">
-			Copyright © Shinohara. ALL RIGHTS RESERVED.
-		</div>
- 	</footer>
-
-
-	
-</body>
-</html>
+<?php get_footer() ?>
