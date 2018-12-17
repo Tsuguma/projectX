@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+body {
+  width: 1152px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+header {
+  position: relative;
+  width: 1152px;
+}
+header .img {
+  position: absolute;
+  z-index: 10;
+}
+
+.m-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.m-nav ul li {
+  padding-top: 40px;
+  margin-left: 15px;
+  font: 14px bold;
+}
+
+body {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.vmain {
+  text-align: center;
+}
+
+.words {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.vmain {
+  position: relative;
+}
+.vmain .imgtext {
+  position: absolute;
+  right: 2px;
+  bottom: -46px;
+}
+
+.sp-img {
+  display: none;
+}
+
+.ctitle {
+  padding: 70px 70px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+/*  margin: 0 70px;*/
+}
+
+.post p {
+  font-family: bold;
+  font-size: 16px;
+}
+
+.post-size {
+  width: 320px;
+  height: 400px;
+  margin:0 10px 30px;
+  transition: 0.5s;
+}
+.post-size:hover {
+  box-shadow: 0 0 8px gray;
+}
+
+.unreade {
+  position: relative;
+}
+.unreade .read {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+}
+
+.date, .come {
+  padding: 5px 0px 5px 5px;
+}
+
+.under {
+  text-decoration: none;
+  color: #000;
+}
+
+.read {
+  position: relative;
+}
+
+.read::after {
+  display: block;
+  content: "";
+  width: 15%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 0;
+  bottom: -13px;
+  transition: 0.5s;
+}
+
+.read:hover::after {
+  width: 100%;
+}
+
+.post {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  body{
+    width: 100%;
+  }
+  header {
+    width: 100%;
+    position: initial;
+    text-align: center;
+  }
+  header .img {
+    position: initial;
+    z-index: initial;
+    padding: 20px 0px;
+  }
+  header .m-nav {
+    display: none;
+  }
+
+  .pc-img {
+    display: none;
+  }
+
+  .sp-img {
+    display: initial;
+    width: 100%;
+  }
+
+  .vmain {
+    position: relative;
+  }
+
+  .imgtext {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 50%;
+  }
+
+  main .words {
+    font-size: 16px;
+  }
+  main .come {
+    font-size: 16px;
+  }
+  main .read {
+    font-size: 12px;
+  }
+  main .content .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .content .post .post-size {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    width: 100%;
+  }
+  footer .copy {
+    font-size: 12px;
+  }
+}
