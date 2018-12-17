@@ -1,5 +1,5 @@
 body {
-	max-width: 1152px;
+	width: 1152px;
 	margin: 0 auto;
 }
 
@@ -123,16 +123,39 @@ body {
 	.sp-img{
 		display: initial;
 	}
+
+	.vimg {
+		width: 100%;
+	}
+
 	.vmain {
-	position: relative;
-	width: 100vw;
+		position: relative;
     }
+
 	.imgtext {
 		position: absolute;
 		left: 20px;
 		top: 30px;
+		width: 70%;
 	}
+
 	main {
+		.words {
+			font-size: 16px;
+		}
+
+		.ctitle {
+			font-size: 16px bold;
+		}
+
+		.come {
+			font-size: 16px;
+		}
+
+		.read {
+			font-size: 12px;
+		}
+
 		.content {
 			.post {
 				display: flex;
@@ -146,8 +169,9 @@ body {
 	}
 	footer {
 		width: 100%;
+		text-align: center;
 		.copy {
-			font-size: 24px;
+			font-size: 12px;
 		}
 	}
   }
